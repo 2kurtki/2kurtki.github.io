@@ -38,6 +38,15 @@ body {
   background: linear-gradient(180deg, #FFFFF9 49.73%, rgba(255, 255, 249, 0) 83.5%);
 }
 
+.header__wrapper_fixed {
+  /*position: fixed;*/
+  /*width: 100%;*/
+  /*min-width: 1150px;*/
+  /*height: 110px;*/
+
+  /*background: linear-gradient(180deg, rgba(255, 255, 249, 0.8) 82.29%, rgba(255, 255, 249, 0.4) 89.58%, rgba(255, 255, 249, 0) 100%);*/
+}
+
 .header__inner {
   position: relative;
   font-size: 36px;
