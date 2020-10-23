@@ -118,11 +118,11 @@ body {
 .intro {
   position: relative;
   width: 100%;
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   min-width: 1150px;
   height: 51.56vw;
   min-height: 594px;
-  max-height: 990px;
+  /*max-height: 990px;*/
 
   bottom: 96px;
   margin: 0 auto 96px;
@@ -133,13 +133,19 @@ body {
   background-size: cover;
 }
 
+.intro__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .intro__inner {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 442px;
   height: 173px;
-  left: 10.27%;
-  top: 16.71%;
+
+  right: 360px;
+  top: 130px;
 }
 
 .intro__blur {
@@ -431,8 +437,8 @@ body {
   height: 27.96vw;
   min-width: 1150px;
   min-height: 337px;
-  max-width: 1920px;
-  max-height: 562px;
+  /*max-width: 1920px;*/
+  /*max-height: 562px;*/
   margin: 40px auto 0;
 
   background: url("../images/footer.png") bottom no-repeat;
