@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/icons/pageLogo.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Trip & Mind</title>
@@ -10,80 +12,93 @@
 
   <header class="header">
     <div class="container">
-<!--      <div class="header__wrapper_fixed">-->
-        <div class="header__inner">
-          <div class="header__logo">
-            <img src="assets/images/icons/iconLogoDark.svg" class="nav__logo" alt="Trip&Mind-logo">
-          </div>
-          <nav class="nav">
-            <a class="nav__link" href="#">Home</a>
-            <a class="nav__link" href="#">Tour Programs</a>
-            <a class="nav__link" href="#">Gallery</a>
-            <a class="nav__link" href="#">Help</a>
-          </nav>
-          <div class="header__button">
-            <a class="header__link" href="#">
-              <svg width="49" height="23" viewBox="0 0 49 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect class="header__link-button" width="49" height="5" rx="2" fill="#333333"/>
-                <rect class="header__link-button" y="9" width="49" height="5" rx="2" fill="#333333"/>
-                <rect class="header__link-button" y="18" width="49" height="5" rx="2" fill="#333333"/>
-              </svg>
-            </a>
-          </div>
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="assets/images/icons/iconLogoDark.svg" class="nav__logo" alt="Trip&Mind-logo">
         </div>
+
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="#" data-scroll="#intro">Home</a>
+          <a class="nav__link" href="#" data-scroll="#main">Tour Programs</a>
+          <a class="nav__link" href="#" data-scroll="#partners">Partners</a>
+          <a class="nav__link" href="#" data-scroll="#footer">Help</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+
+<!--        <div class="header__button">-->
+<!--          <a class="header__link" href="#">-->
+<!--            <svg width="49" height="23" viewbox="0 0 49 23" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--              <rect class="header__link-button" width="49" height="5" rx="2" fill="#333333"/>-->
+<!--              <rect class="header__link-button" y="9" width="49" height="5" rx="2" fill="#333333"/>-->
+<!--              <rect class="header__link-button" y="18" width="49" height="5" rx="2" fill="#333333"/>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--        </div>-->
+
       </div>
-<!--    </div>-->
+    </div>
   </header>
 
-  <div class="intro">
-
+  <div class="intro" id="intro">
     <div class="container">
-      <div class="intro__wrapper">
         <div class="intro__inner">
-          <div class="intro__blur"></div>
-          <h1 class="intro__title">Your chance<br>to be inspired<br>by nature</h1>
+          <div class="intro__wrapper">
+            <div class="intro__blur"></div>
+            <h1 class="intro__title">Your chance<br>to be inspired<br>by nature</h1>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 
-  <main class="main">
+  <main class="main" id="main">
     <div class="container">
       <div class="main__wrapper">
         <aside class="aside">
-          <img src="assets/images/buggy.png" class="aside__buggy-img" alt="dune buggy">
-          <div class="aside__dividing-line"></div>
-          <h1 class="aside__title">Desert Dune Buggy Rental</h1>
-          <ul class="aside__info">
-            <li>Price: 800 AED per Hour</li>
-            <li>2 Seater Dune Buggy (2 Persons can go in 800AED)</li>
-            <li>Powerful Engine V8 LS1, LS2, LS3, Z06</li>
-            <li>1 Hour Drive In Desert</li>
-            <li>Pick n Drop Included</li>
-          </ul>
-          <a class="aside__link" href="#">View More
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="aside__link-arrow" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536
-                  3.64645L8.17157 0.464466C7.97631 0.269204 7.65973 0.269204 7.46447 0.464466C7.2692 0.659728 7.2692
-                   0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447
-                    7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM0 4.5H11V3.5H0V4.5Z"
-                    fill="#333333"/>
-            </svg>
-          </a>
-          <p class="aside__note">recommended for you</p>
+          <div class="aside__header">
+            <img src="assets/images/buggy.png" class="aside__buggy-img" alt="dune buggy">
+            <div class="aside__dividing-line"></div>
+          </div>
+          <div class="aside__content">
+            <h2 class="aside__title">Desert Dune Buggy Rental</h2>
+            <ul class="aside__info">
+              <li>Price: 800 AED per Hour</li>
+              <li>2 Seater Dune Buggy (2 Persons can go in 800AED)</li>
+              <li>Powerful Engine V8 LS1, LS2, LS3, Z06</li>
+              <li>1 Hour Drive In Desert</li>
+              <li>Pick n Drop Included</li>
+            </ul>
+            <a class="aside__link" href="#">View More
+              <svg width="12" height="8" viewbox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="aside__link-arrow" d="M11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536
+                    3.64645L8.17157 0.464466C7.97631 0.269204 7.65973 0.269204 7.46447 0.464466C7.2692 0.659728 7.2692
+                     0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447
+                      7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM0 4.5H11V3.5H0V4.5Z"
+                      fill="#333333"/>
+              </svg>
+            </a>
+          </div>
+          <div class="aside__footer">
+            <p class="aside__note">recommended for you</p>
+          </div>
         </aside>
 
-        <section class="case">
+        <section class="section">
 
-          <iframe class="video" width="552" height="337" src="https://www.youtube.com/embed/Mhsct3YavxQ?showinfo=0&modestbranding=1&rel=0&egm=0&iv_load_policy=3&border=0" frameborder="0" allowfullscreen></iframe>
+          <div class="section__video">
+            <iframe width="552" height="auto" src="https://www.youtube.com/embed/Mhsct3YavxQ?showinfo=0&modestbranding=1&rel=0&egm=0&iv_load_policy=3&border=0" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-          <figure class="description">
-            <img src="assets/images/desert.png" class="description__desert-img" alt="desert-img">
-            <p class="description__text">With automatically programmed gearboxes and 4 wheel<br>drive system,
-              driving through the sand dunes is not<br>difficult anymore. One of our instructors will accompany<br>you
-              through the ride, and together you guys will<br>encounter one heck of an adventure!
-            </p>
-          </figure>
+          <div class="description">
+            <div class ="description__inner">
+              <p class="description__text">With automatically programmed gearboxes and 4 wheel drive system,
+                driving through the sand dunes is not difficult anymore.<span> One of our instructors will accompany you
+                through the ride, and together you guys will encounter one heck of an adventure!</span>
+              </p>
+            </div>
+          </div>
 
         </section>
       </div>
@@ -91,152 +106,172 @@
   </main>
 
 
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="container">
       <div class="partners__wrapper">
-        <div class="partners__upper-line"></div>
         <h1 class="partners__headline">Our Partners</h1>
-        <div class="logos">
-          <img src="assets/images/logos/redbull.svg" class="redbull" alt="redbull-logo">
-          <img src="assets/images/logos/luk-oil.svg" class="luk-oil" alt="luk-oil-logo">
-          <img src="assets/images/logos/toyota.svg" class="toyota" alt="toyota-logo">
-          <img src="assets/images/logos/dell.svg" class="dell" alt="dell-logo">
-          <img src="assets/images/logos/gopro.svg" class="gopro" alt="gopro-logo">
-          <img src="assets/images/logos/salomon.svg" class="salomon" alt="salomon-logo">
-          <img src="assets/images/logos/msr.svg" class="msr" alt="msr-logo">
-          <img src="assets/images/logos/land-rover.svg" class="land-rover" alt="land-rover-logo">
-        </div>
-        <div class="partners__lower-line"></div>
+          <ul class="logos">
+           <li>
+              <img src="assets/images/partners-logos/redbull.svg" class="logos__redbull" alt="redbull-logo">
+           </li>
+            <li>
+              <img src="assets/images/partners-logos/luk-oil.svg" class="logos__luk-oil" alt="luk-oil-logo">
+            </li>
+            <li>
+              <img src="assets/images/partners-logos/toyota.svg" class="logos__toyota" alt="toyota-logo">
+            </li>
+            <li>
+              <img src="assets/images/partners-logos/dell.svg" class="logos__dell" alt="dell-logo">
+            </li>
+            <li>
+              <img src="assets/images/partners-logos/gopro.svg" class="logos__gopro" alt="gopro-logo">
+            </li>
+            <li>
+              <img src="assets/images/partners-logos/salomon.svg" class="logos__salomon" alt="salomon-logo">
+            </li>
+            <li>
+              <div class="logos__msr">
+                <img src="assets/images/partners-logos/msr.svg" alt="msr-logo">
+              </div>
+            </li>
+            <li>
+              <img src="assets/images/partners-logos/land-rover.svg" class="logos__land-rover" alt="land-rover-logo">
+            </li>
+          </ul>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
-      <nav class="footer__nav">
-        <div class="footer__upper-line"></div>
-          <div class="column">
+      <div class="footer__inner">
 
-            <div class="column__left-line"></div>
-            <div class="column__center-left-line"></div>
-            <div class="column__center-right-line"></div>
-            <div class="column__right-line"></div>
+        <div class="column__item column__item_work-with-us">
+          <h2 class="column__title" data-collapse="#list-menu_1">Work with us</h2>
+          <ul class="list-menu" id="list-menu_1">
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Supplier</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Administration</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Affiliate</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Partner</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Cooperation</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="column__box column__box_work-with-us">
-              <h2 class="column__title">Work with us</h2>
-              <ul class="list-menu">
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Supplier</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Administration</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Affiliate</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Partner</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Administration</a>
-                </li>
-              </ul>
-            </div>
+        <div class="column__line"></div>
 
-            <div class="column__box column__box_company">
-              <h2 class="column__title">Company</h2>
-              <ul class="list-menu">
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">About Us</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Careers</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Blog</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Gift Cards</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Magazine</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="column__box column__box_support">
-              <h2 class="column__title">Support</h2>
-              <ul class="list-menu">
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Contact</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Legal</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Privacy Policy</a>
-                </li>
-                <li class="list-menu__list">
-                  <a class="list-menu__link" href="#">Terms of Use</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="column__box column__box_payment">
-              <h2 class="column__title">Payment</h2>
-              <div class="payment">
-                <img src="assets/images/payment/jcb.svg" class="jcb" alt="jcb-logo">
-                <img src="assets/images/payment/amex.svg" class="amex" alt="amex-logo">
-                <img src="assets/images/payment/diners-club.svg" class="diners-club" alt="diners-club-logo">
-                <img src="assets/images/payment/google-pay.svg" class="google-pay" alt="google-pay-logo">
-                <img src="assets/images/payment/visa.svg" class="visa" alt="visa-logo">
-                <img src="assets/images/payment/apple-pay.svg" class="apple-pay" alt="apple-pay-logo">
-                <img src="assets/images/payment/discover.svg" class="discover" alt="discover-logo">
-                <img src="assets/images/payment/mastercard.svg" class="mastercard" alt="mastercard-logo">
-              </div>
-            </div>
-
-            <div class="column__box column__box_mobile">
-              <h2 class="column__title">Mobile</h2>
-              <div class="mobile">
-                <a href="https://apps.apple.com/app/id1371565796?mt=8" target="_blank">
-                  <img src="assets/images/icons/AppStore.svg" class="AppStore" alt="AppStore-logo">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.plarium.raidlegends&referrer=adjust_reftag%3DcZNkkiXzbEs6X%26utm_source%3DSEO%26utm_campaign%3Dunknown%26utm_content%3DGamePage" target="_blank">
-                  <img src="assets/images/icons/GooglePlay.svg" class="GooglePlay" alt="GooglePlay-logo">
-                </a>
-              </div>
-            </div>
-
-            <div class="column__box column__box_social">
-              <h2 class="column__title">Social</h2>
-              <div class="social">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
-                  <img src="assets/images/icons/iconVK.svg" alt="Vk-logo">
-                </a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
-                  <img src="assets/images/icons/iconYouTube.svg" alt="YouTube-logo">
-                </a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
-                  <img src="assets/images/icons/iconFB.svg" alt="Facebook-logo">
-                </a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
-                  <img src="assets/images/icons/iconTwitter.svg" alt="Twitter-logo">
-                </a>
-              </div>
-            </div>
-
+        <div class="column__item column__item_mobile">
+          <h2 class="column__title" data-collapse="#mobile">Mobile</h2>
+          <div class="mobile" id="mobile">
+            <a href="https://apps.apple.com/app/id1371565796?mt=8" target="_blank">
+              <img src="assets/images/icons/AppStore.svg" class="AppStore" alt="AppStore-logo">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.plarium.raidlegends&referrer=adjust_reftag%3DcZNkkiXzbEs6X%26utm_source%3DSEO%26utm_campaign%3Dunknown%26utm_content%3DGamePage" target="_blank">
+              <img src="assets/images/icons/GooglePlay.svg" class="GooglePlay" alt="GooglePlay-logo">
+            </a>
           </div>
-        <div class="footer__lower-line"></div>
-      </nav>
+        </div>
+
+        <div class="column__line"></div>
+
+        <div class="column__item column__item_social">
+          <h2 class="column__title" data-collapse="#social">Social</h2>
+          <div class="social" id="social">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
+              <img src="assets/images/icons/iconVK.svg" alt="Vk-logo">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
+              <img src="assets/images/icons/iconYouTube.svg" alt="YouTube-logo">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
+              <img src="assets/images/icons/iconFB.svg" alt="Facebook-logo">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social__link" target="_blank">
+              <img src="assets/images/icons/iconTwitter.svg" alt="Twitter-logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="column__line"></div>
+
+        <div class="column__item column__item_company">
+          <h2 class="column__title" data-collapse="#list-menu_2">Company</h2>
+          <ul class="list-menu" id="list-menu_2">
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">About Us</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Careers</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Blog</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Gift Cards</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Magazine</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column__line"></div>
+
+        <div class="column__item column__item_support">
+          <h2 class="column__title" data-collapse="#list-menu_3">Support</h2>
+          <ul class="list-menu" id="list-menu_3">
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Contact</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Legal</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="list-menu__list">
+              <a class="list-menu__link" href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column__line"></div>
+
+        <div class="column__item column__item_payment">
+          <h2 class="column__title" data-collapse="#payment">Payment</h2>
+          <div class="payment" id="payment">
+            <img src="assets/images/payment/jcb.svg" class="jcb" alt="jcb-logo">
+            <img src="assets/images/payment/amex.svg" class="amex" alt="amex-logo">
+            <img src="assets/images/payment/diners-club.svg" class="diners-club" alt="diners-club-logo">
+            <img src="assets/images/payment/google-pay.svg" class="google-pay" alt="google-pay-logo">
+            <img src="assets/images/payment/visa.svg" class="visa" alt="visa-logo">
+            <img src="assets/images/payment/apple-pay.svg" class="apple-pay" alt="apple-pay-logo">
+            <img src="assets/images/payment/discover.svg" class="discover" alt="discover-logo">
+            <img src="assets/images/payment/mastercard.svg" class="mastercard" alt="mastercard-logo">
+          </div>
+        </div>
+
+      </div>
 
       <div class="footer__subtitle">
         <img src="assets/images/icons/iconLogoGrey.svg" alt="Trip&Mind-logo">
-        <p class="footer__copyrights">© Trip And Mind LLC, Dubai, UAE. 2015-2020. All Rights Reserved.</p>
+        © Trip And Mind LLC, Dubai, UAE. 2015-2020. All Rights Reserved.
       </div>
 
     </div>
   </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>
