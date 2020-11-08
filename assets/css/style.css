@@ -453,35 +453,57 @@ body {
       width: 45%;
       padding: 10px 0; } }
 
-.logos__redbull {
+.logos__item img {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.logos__item_redbull {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 76%; }
 
-.logos__luk-oil {
+.logos__item_luk-oil {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 46.3%; }
 
-.logos__toyota {
+.logos__item_toyota {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 62.4%; }
 
-.logos__dell {
+.logos__item_dell {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 49.9%; }
 
-.logos__gopro {
+.logos__item_gopro {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 100%; }
 
-.logos__salomon {
+.logos__item_salomon {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 67.5%; }
 
-.logos__msr {
+.logos__item_msr {
   position: relative;
-  width: 74.9%;
   height: 0;
-  padding-bottom: 51%; }
-  .logos__msr img {
-    position: absolute;
-    width: 100%;
-    height: 100%; }
+  padding-bottom: 51%;
+  width: 74.9%; }
 
-.logos__land-rover {
+.logos__item_land-rover {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 70%; }
 
 /* Footer */

@@ -585,35 +585,7 @@ body {
   }
 }
 
-.logos__redbull {
-  width: 76%;
-}
-
-.logos__luk-oil {
-  width: 46.3%;
-}
-
-.logos__toyota {
-  width: 62.4%;
-}
-
-.logos__dell {
-  width: 49.9%;
-}
-
-.logos__gopro {
-  width: 100%;
-}
-
-.logos__salomon {
-  width: 67.5%;
-}
-
-.logos__msr {
-  position: relative;
-  width: 74.9%;
-  height: 0;
-  padding-bottom: 51%;
+.logos__item {
   img {
     position: absolute;
     width: 100%;
@@ -621,7 +593,59 @@ body {
   }
 }
 
-.logos__land-rover {
+.logos__item_redbull {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 76%;
+}
+
+.logos__item_luk-oil {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 46.3%;
+}
+
+.logos__item_toyota {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 62.4%;
+}
+
+.logos__item_dell {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 49.9%;
+}
+
+.logos__item_gopro {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 100%;
+}
+
+.logos__item_salomon {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 67.5%;
+}
+
+.logos__item_msr {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
+  width: 74.9%;
+}
+
+.logos__item_land-rover {
+  position: relative;
+  height: 0;
+  padding-bottom: 51%;
   width: 70%;
 }
 
