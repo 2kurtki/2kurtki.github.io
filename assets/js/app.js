@@ -20,6 +20,7 @@ $(function() {
 
         $(this).toggleClass("active");
         $("#nav").toggleClass("active");
+        $("#main").toggleClass("active");
     });
 
 
